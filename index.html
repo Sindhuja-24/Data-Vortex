@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="LOGO22.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHON</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+  <img src="LOGO22.jpg" alt="Hackathon Logo" class="hackathon-logo">
+</a>
+
+      <div class="logo-container">
+  <img src="kl ird.jpg" alt="KL IRD Logo" class="klird-logo" />
+  
+</div>
+      <nav class="navbar">
+        <a href="home" style="--i:1" class="active">Home</a>
+        <a href="#about" style="--i:2">About</a>
+        <a href="#events" style="--i:3">Events</a>
+        <a href="#projects" style="--i:4">Projects</a>
+        <a href="#footer" style="--i:5">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <div class="logos-row">
+  </a><img src="sods2.png" alt="SODS Logo" class="logo-img" />
+  <span class="logo-x">X</span>
+  <img src="garuda2.png" alt="GARUDA Logo" class="logo-img" />
+  <span class="logo-x">X</span>
+  <img src="cyber2.png" alt="Cyber Security Logo" class="logo-img" />
+</div>
+
+    
+  <img src="logo2.png" alt="Hackathon Banner" class="hackathon-image" />
+
+        <h3 style="margin-bottom: 5px;">Data Science <span class="text"></span></h3>
+        
+        <p>🚀 Are you ready to solve real-world challenges <br>and win exciting internship?
+        </p>
+        <div class="home-sci">
+          <a href="#" style="--i:7"><i class='bx bxl-facebook' style="color: rgb(255, 255, 255);"></i></a>
+          <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+          <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+          <a href="#" style="--i:10"><i class='bx bxl-telegram'></i></a>
+
+        </div>
+        
+        <a href="https://unstop.com/hackathons/innofusion-hackathon-koneru-lakshmaiah-education-foundation-1428391" class="btn-box" target="_blank">Register here</a>
+        
+      </div>
+      <script src="main.js"></script>
+    </section>
+
+  <section class="about" id="about">
+  <h1>About The Hackathon</h1>
+  <section class="container">
+    <article class="card rules">
+      <h2>Rules &amp; Guidelines</h2>
+      <ul>
+        <li>Teams may submit up to 2 projects.</li>
+        <li>Team size: 1 to 4 members.</li>
+        <li>Participants cannot join multiple teams.</li>
+        <li>Projects must be original and innovative.</li>
+        <li>Adhere to the code of conduct.</li>
+      </ul>
+    </article>
+    <article class="card judging">
+      <h2>Judging Criteria</h2>
+      <div class="criteria-list">
+        <div><span>Creativity</span><span>35%</span></div>
+        <div><span>Functionality</span><span>30%</span></div>
+        <div><span>Business Model</span><span>20%</span></div>
+        <div><span>Presentation</span><span>15%</span></div>
+      </div>
+    </article>
+    <article class="card prizes">
+      <h2>Exciting Prizes</h2>
+      <p><strong>Exclusive Swag</strong><br />Special gifts for top participants.</p>
+      <p><strong>Top 3 Winners</strong><br />Awards for the best projects across categories.</p>
+    </article>
+    <article class="club-card">
+      <h3>SODS Club</h3>
+      <p>The Society of Data Science (SODS) promotes community engagement in data science, AI, and machine learning.</p>
+    </article>
+    <article class="club-card">
+      <h3>Garuda Club</h3>
+      <p>Garuda is the university's leading electronics and robotics club, exploring hardware innovations and IoT applications.</p>
+    </article>
+    <article class="club-card">
+      <h3>Cyber Security Club</h3>
+      <p>The Society of Data Science (SODS) promotes community engagement in data science, AI, and machine learning.</p>
+    </article>
+  </section>
+</section>
+
+<section id="events">
+  <h1>Event Timeline</h1>
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="content">
+        <h2>Starting Of the Day</h2>
+        <p> Ingratiation Ceremony </p>
+        <span>July 29th - 9:30 AM</span>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="content">
+        <h2>First Review</h2>
+        <span>July 29th - 9:30 PM</span>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="content">
+        <h2>Project Development</h2>
+        <p>Teams working on their projects.</p>
+        <span>July 30th - 2:00 AM</span>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="content">
+        <h2>Final Review</h2>
+        <p>Teams present their solution to judges.</p>
+        <span>July 30th - 5:30 AM</span>
+      </div>
+    </div>
+    <div class="timeline-item left">
+      <div class="content">
+        <h2>Prize Distribution & Closing Ceremony</h2>
+       
+        <span>July 30th - 10AM to 12AM </span>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+  const items = document.querySelectorAll(".timeline-item");
+
+  const isInViewport = el => {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight * 0.8;
+  };
+
+  const run = () => {
+    items.forEach(item => {
+      if (isInViewport(item)) {
+        item.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("load", run);
+  window.addEventListener("scroll", run);
+</script>
+
+</section>
+
+<section class="projects" id="projects">
+  <h2>PROBLEM STATEMENTS</h2>
+  <P>
+
+  </P>
+  <p class="pdf-intro">📄 Kindly click the below pdfs to access the problem statements:</p>
+  <div class="pdf-catalog">
+    <div class="pdf-card">
+      <a href="Theme 1International broucher.pdf" target="_blank">
+        <img src="121.avif" alt="Problem 1" class="pdf-image" />
+        <div class="pdf-overlay">
+          <span>Theme 1</span>
+        </div>
+      </a>
+    </div>
+    <p>
+
+    </p>
+    <div class="pdf-card">
+      <a href="Theme 1International broucher.pdf" target="_blank">
+        <img src="122.jpg" alt="Problem 2" class="pdf-image" />
+        <div class="pdf-overlay">
+          <span>Theme 2</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</section>
+    <section class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h2 class="footer-logo"><span class="highlight">DATA VORTEX  </span>SKYINTELLECT</h2>
+      <p>Join our Hackathon to innovate, collaborate, and create solutions for real-world problems.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Software Track</a></li>
+        <li><a href="#">Hardware Track</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul class="contact-list">
+        <li><span class="icon">📍</span> KLUniversity, Vijayawada</li>
+        <li><span class="icon">📞</span> Venkat : 9247456666</li>
+        <li><span class="icon">📞</span> Ch.Nithin: 9908041738</li>
+        <li><span class="icon">📧</span> <a href="sodsklef@gmail.com">hackathon@klu.ac.in</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Organized By</h3>
+      <ul class="footer-links">
+        <li>SODS Club</li>
+        <li>Garuda Club</li>
+        <li>Cyber Security Club</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SODS, Garuda & Cyber Security Hackathon. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</section>
+    
+  </body>
+</html>
+
+
+
+
+
