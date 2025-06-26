@@ -30,7 +30,7 @@ body {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     cursor: default;
     opacity: 0;
     animation: slideTop 1s ease forwards;
