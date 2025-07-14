@@ -410,6 +410,93 @@ h1::after {
     flex: 1 1 100%;
   }
 }
+/* Countdown Timer Styling Scoped */
+.home .countdown-wrapper {
+  color: #333;
+  margin: 2rem auto 1rem;
+  text-align: center;
+}
+
+.home .countdown-wrapper h3 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+}
+
+
+.home .countdown-wrapper ul {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.home .countdown-wrapper li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home .countdown-wrapper li span {
+  display: block;
+  font-size: 4.5rem;
+  color: #00ffff;
+}
+
+.home .countdown-wrapper .emoji {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.home .countdown-wrapper .emoji span {
+  font-size: 3rem;
+}
+
+@media all and (max-width: 768px) {
+  .home .countdown-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .home .countdown-wrapper li {
+    font-size: 1.1rem;
+  }
+
+  .home .countdown-wrapper li span {
+    font-size: 3.2rem;
+  }
+}
+#countdown ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 1rem; /* reduced from 1.5em */
+  list-style-type: none;
+  padding: 0.5em;   /* reduced padding */
+  text-transform: uppercase;
+  color: white;
+}
+
+#countdown li span {
+  display: block;
+  font-size: 2.5rem; /* reduced from 4.5rem */
+  font-weight: bold;
+  color: #00ffff;
+}
+
+
+
 #about {
   padding: 60px 10%;
   background: url(https://static.vecteezy.com/system/resources/thumbnails/033/537/875/original/animated-particle-background-isolated-on-blackground-sparkle-rain-star-dust-footage-free-video.jpg) no-repeat center center/cover;
@@ -421,6 +508,14 @@ h1::after {
 .projects {
   padding: 200px 30%;
   background: url(black_and_purple_sky_with_fade_stars_hd_space-1920x1080.jpg) no-repeat center center/cover;
+}
+
+.projects h2{
+  color: #ffffff;
+  font-weight: 2000;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .timeline {
@@ -501,6 +596,16 @@ h1::after {
 .timeline-item.right::before {
   left: -12.5px;
   right: auto;
+}
+
+.timeline__item {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.6s ease-out;
+
+  &.visible {
+    animation: slideInUp 0.8s ease forwards;
+  }
 }
 
 @keyframes fadeInUp {
@@ -699,24 +804,38 @@ h1::after {
 .pdf-intro {
   color: white;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  max-width: 2000px;   /* Optimal large width for wide screens */
+  width: 120%;          /* Allow it to grow with screen size */
+  margin-left: 0.2px;
+  margin-right: auto;
+  text-align: center;
 }
+
 
 .pdf-catalog {
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Optional: more spacing between cards */
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1000px; /* Limits total row width */
+  margin: 0 auto;
 }
+
+
 
 .pdf-card {
   position: relative;
   width: 250px;
-  height: 150px;
+  height: 200px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+.pdf-card:first-child {
+  margin-right: 30px; /* Increase the gap between the two cards */
 }
 
 .pdf-card:hover {
