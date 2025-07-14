@@ -36,7 +36,7 @@
   <img src="garuda2.png" alt="GARUDA Logo" class="logo-img" />
   <span class="logo-x">X</span>
   <div id="sac">
-  <img src="sac_logo.png" alt="Cyber Security Logo" width="200" height="200" style="resize: both; overflow: auto; display: block;" />
+  <img src="saclogossssss-removebg-preview.png" alt="Cyber Security Logo" width="200" height="100" style="resize: both; overflow: auto; display: block;" />
 </div>
   <span class="logo-x">X</span>
   <img src="VEDA_WHITE.png" alt="Veda logo" class="logo-img" />
@@ -49,13 +49,56 @@
         
         <p>🚀 Are you ready to solve real-world challenges <br>and win exciting internship?
         </p>
-        <div class="home-sci">
-          <a href="#" style="--i:7"><i class='bx bxl-facebook' style="color: rgb(255, 255, 255);"></i></a>
-          <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
-          <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
-          <a href="#" style="--i:10"><i class='bx bxl-telegram'></i></a>
+       <div class="countdown-wrapper">
+      <h3 id="headline">REGISTRATION ENDS IN :</h3>
+      <div id="countdown">
+        <ul>
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-        </div>
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "08/05/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+
+  const countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+          const now = new Date().getTime(),
+                distance = countDown - now;
+
+          document.getElementById("days").innerText = Math.floor(distance / (day));
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+          if (distance < 0) {
+            document.getElementById("headline").innerText = "It's my birthday!";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            clearInterval(x);
+          }
+        }, 1000);
+})();
+</script>
         
         <a href="https://unstop.com/hackathons/innofusion-hackathon-koneru-lakshmaiah-education-foundation-1428391" class="btn-box" target="_blank">Register here</a>
         
@@ -117,36 +160,48 @@
   <div class="timeline">
     <div class="timeline-item left">
       <div class="content">
-        <h2>Starting Of the Day</h2>
-        <p> Ingratiation Ceremony </p>
-        <span>July 29th - 9:30 AM</span>
+        <h2>HACKATHON LAUNCH</h2>
+        <p>The official start of the Hackathon journey! Teams can start registering and accessing resources for idea development.</p>
+        <span>July 15th</span>
       </div>
     </div>
     <div class="timeline-item right">
       <div class="content">
-        <h2>First Review</h2>
-        <span>July 29th - 9:30 PM</span>
+        <h2>IDEAS SUBMISSION WINDOW</h2>
+        <p>Registrations will be Accepted Through Unstop.
+          Participants are invited to submit their innovative ideas based on the <b>Specific Problem Statements</b> provided.
+        </p>
+        <span>15th July    -    5th August</span>
       </div>
     </div>
     <div class="timeline-item left">
       <div class="content">
-        <h2>Project Development</h2>
-        <p>Teams working on their projects.</p>
-        <span>July 30th - 2:00 AM</span>
+        <h2>IDEAS SHORTLISTING</h2>
+        <p>A panel of experts will evaluate all submitted ideas on innovation, feasibility, and relevance. Shortlisted teams will proceed to the next round.</p>
+        <span>5th  August   -   20th August</span>
       </div>
     </div>
     <div class="timeline-item right">
       <div class="content">
-        <h2>Final Review</h2>
-        <p>Teams present their solution to judges.</p>
-        <span>July 30th - 5:30 AM</span>
+        <h2>ONLINE PRESENTATION</h2>
+        <p>Selected teams will pitch their ideas virtually. Judges will assess clarity, technical depth, and potential impact to decide who moves forward.</p>
+        <span>21st  August   -   30th  August</span>
       </div>
     </div>
     <div class="timeline-item left">
       <div class="content">
-        <h2>Prize Distribution & Closing Ceremony</h2>
+        <h2>ANNOUNCEMENT OF FINALISTS</h2>
+        <p>Finalist teams advancing to the grand finale will be officially announced on this date.</p>
        
-        <span>July 30th - 10AM to 12AM </span>
+        <span>4th September</span>
+      </div>
+    </div>
+    <div class="timeline-item right">
+      <div class="content">
+        <h2>FINAL HACKATHON (OFFLINE)</h2>
+        <p>Finalist teams will participate in a 24hr offline hackathon to develop working prototypes. Prizes and recognition await the most impactful solutions!</p>
+       
+        <span>6th October - 7th October</span>
       </div>
     </div>
     
@@ -175,14 +230,17 @@
 
 <section class="projects" id="projects">
   <h2>Guidelines & Problem Statements</h2>
-  <P>
+</br>
+  <p class="pdf-intro">All participants are expected to follow the official hackathon rules and structure. Please ensure your submissions comply with the timelines, formats, and eligibility criteria mentioned. Participants must build their solutions based on the specific problem statements provided by the organizing team.</p>
 
-  </P>
-  <p class="pdf-intro">📄 Kindly click the below pdfs to access the problem statements:</p>
+<p class="pdf-intro">🔗 Refer to the provided brochure for complete rules, team size, submission format, and judging criteria.</p>
+<p class="pdf-intro">📄 Please refer to the official problem statement document for detailed descriptions and requirements.
+Make sure your ideas directly address the challenges mentioned.</p>
+</br>
   <div class="pdf-catalog">
     <div class="pdf-card">
       <a href="Theme 1International broucher.pdf" target="_blank">
-        <img src="121.avif" alt="Problem 1" class="pdf-image" />
+        <img src="h1.png" alt="Problem 1" class="pdf-image" />
         <div class="pdf-overlay">
           <span>Hackathon Guide</span>
         </div>
@@ -193,7 +251,7 @@
     </p>
     <div class="pdf-card">
       <a href="Theme 1International broucher.pdf" target="_blank">
-        <img src="122.jpg" alt="Problem 2" class="pdf-image" />
+        <img src="h2.png" alt="Problem 2" class="pdf-image" />
         <div class="pdf-overlay">
           <span>Problem Statements</span>
         </div>
@@ -262,9 +320,8 @@ Showcase your talent and innovation for a chance to win exciting prizes and land
     <div class="h2s-right">
       <h3><b>Data Vortex SkyIntellect 2025</b></h3>
       <p></p>
-      <strong>Corporate Address:</strong>
-      <p><strong>India</strong></p>
-      <p><strong>Andhra Pradesh:</strong> Green Fields, Vaddeswaram, Guntur, Andhra Pradesh 522502</p>
+      
+      <p><strong>K L University : </strong> Green Fields, Vaddeswaram, Guntur, Andhra Pradesh 522502</p>
     </div>
   </div>
 
@@ -276,7 +333,7 @@ Showcase your talent and innovation for a chance to win exciting prizes and land
       <p><strong>Phone:</strong> +91 9392859211</p>
     </div>
     <div class="social">
-      <h4>Social:</h4>
+      <h4>Sponsered By</h4>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-x-twitter"></i></a>
@@ -287,7 +344,7 @@ Showcase your talent and innovation for a chance to win exciting prizes and land
   </div>
 
   <div class="h2s-bottom">
-    <p>2024 © All rights reserved by Hack2skill</p>
+    <p>2025 © All rights reserved by datavortexskyintellect2025</p>
     <div class="legal">
       <a href="#">Terms & Conditions</a>
       <a href="#">Privacy & Policy</a>
@@ -295,7 +352,7 @@ Showcase your talent and innovation for a chance to win exciting prizes and land
     <div class="certs">
       <img src="sods2.png" alt="GDPR" />
       <img src="garuda2.png" alt="ISO" />
-      <img src="cyber2.png" alt="ISO" />
+      <img src="saclogossssss-removebg-preview.png" alt="ISO" />
       <img src="VEDA_WHITE.png" alt="ISO" />
     </div>
   </div>
