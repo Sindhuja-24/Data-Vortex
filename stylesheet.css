@@ -925,11 +925,14 @@ h1::after {
       align-items: center;
       justify-content: center;
       background-color: #fff;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      transition: box-shadow 0.3s ease;
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .sponsor-card:hover {
-      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      transform: scale(1.05); 
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+
     }
     .sponsor-card img {
       max-width: 140px;
