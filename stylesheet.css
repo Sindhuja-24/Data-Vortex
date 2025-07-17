@@ -510,13 +510,7 @@ h1::after {
   background: url(black_and_purple_sky_with_fade_stars_hd_space-1920x1080.jpg) no-repeat center center/cover;
 }
 
-.projects h2{
-  color: #ffffff;
-  font-weight: 2000;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  text-align: center;
-}
+
 
 .timeline {
   position: relative;
