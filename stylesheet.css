@@ -933,3 +933,11 @@ h1::after {
       max-height: 80px;
       object-fit: contain;
     }
+
+.projects h1 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
