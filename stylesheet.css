@@ -744,8 +744,12 @@ h1::after {
 .h2s-mid ul,
 .h2s-right p {
   font-size: 14px;
-  line-height: 2.0;
+  line-height: 2.5;
   margin: 8px 0;
+}
+
+.h2s-mid h2{
+  color: white;
 }
 
 .h2s-contact {
@@ -759,6 +763,11 @@ h1::after {
   color: white;
   margin: 0 8px;
   font-size: 18px;
+}
+
+.h2s-contact .certs img {
+  height: 35px;
+  margin-right: 5px;
 }
 
 .h2s-bottom {
@@ -865,3 +874,65 @@ h1::after {
 .hackathon-logo {
   height: 120px; /* adjust as needed */
 }
+
+/* CSS */
+.competitors-section {
+  margin: 0 auto;
+  padding: 120px 30%;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  text-align: center;
+  max-width: 2000px;
+  width: 100%;
+  background-color: #000000;
+
+}
+
+.competitors-section h1 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.competitors-section body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff;
+      color: #003366;
+      text-align: center;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #000;
+    }
+    .sponsors-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .sponsor-card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      width: 180px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .sponsor-card:hover {
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+    .sponsor-card img {
+      max-width: 140px;
+      max-height: 80px;
+      object-fit: contain;
+    }
