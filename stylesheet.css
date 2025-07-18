@@ -49,6 +49,9 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    padding: 0px 20;   /* reduce top and bottom padding */
+    margin-top: 100;     /* remove extra space above navbar */
+    position: relative;
 }
 
 .navbar a:hover {
@@ -79,6 +82,21 @@ body {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+}
+.countdown-wrapper h5 {
+  font-size: 25px;
+  font-weight: 200;
+  color:#ffffff;
+  font-family: 'Georgia';
+  
+}
+.font h6 {
+  font-size: 22px;
+  font-weight: 200;
+  color:#ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  
 }
 
 .home-content h4 {
@@ -200,16 +218,14 @@ body {
 }
 
 @keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-
+  0% {
+    transform: translateY(100px); /* Start 100px below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);     /* End at original position */
+    opacity: 1;
+  }
 }
 
 @keyframes slideBottom {
@@ -417,13 +433,12 @@ h1::after {
   text-align: center;
 }
 
-.home .countdown-wrapper h3 {
+.home .countdown-wrapper h6{
   font-weight: normal;
   letter-spacing: 0.125rem;
-  text-transform: uppercase;
   color: #ffffff;
   font-size: 2rem;
-  font-family: Georgia, serif;
+  font-family: Georgia;
 }
 
 
@@ -992,3 +1007,4 @@ h1::after {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
