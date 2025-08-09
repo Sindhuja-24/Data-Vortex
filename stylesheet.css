@@ -1119,3 +1119,155 @@ h1::after {
 .info-card p strong {
   color: #032e27; /* or another bright highlight color */
 }
+
+
+/* ===========================
+   Mobile Compatibility Styles
+   =========================== */
+@media (max-width: 768px) {
+
+  /* General container spacing */
+  section {
+    margin: 0;
+    padding: 20px 5%;
+  }
+
+  /* Header & Navbar */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(0, 0, 0, 0.401);
+    /* better contrast for mobile */
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    padding: 10px;
+    width: 100%;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .navbar a {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  /* Logo section */
+  .logos-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .logo-img, .klird-logo {
+    max-width: 80px;
+    height: auto;
+  }
+  .logo-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: static;
+  }
+
+  /* Home content */
+  .home {
+    padding: 20px 5%;
+    height: auto;
+  }
+  .home-content {
+    max-width: 90%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .home-content h1 {
+    font-size: 28px;
+  }
+  .home-content h3 {
+    font-size: 20px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+
+  /* Countdown */
+  #countdown li {
+    font-size: 0.9rem;
+    padding: 0.5em;
+  }
+  #countdown li span {
+    font-size: 2rem;
+  }
+
+  /* Timeline */
+  .timeline::after {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    padding-left: 50px;
+    margin-bottom: 40px;
+  }
+  .timeline-item::before {
+    left: 5px;
+  }
+
+  /* Club cards */
+  .clubs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .club-card {
+    width: 100%;
+    background: #044884cb;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(48, 213, 238, 0.921);
+    padding: 20px;
+    text-align: center;
+  }
+  .club-card h3 {
+    font-size: 1.2rem;
+  }
+  .club-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Hackathon images */
+  .hackathon-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Footer */
+  .h2s-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .h2s-left, .h2s-mid, .h2s-right {
+    min-width: 100%;
+    text-align: center;
+  }
+  
+
+}
